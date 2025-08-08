@@ -387,9 +387,7 @@ def test_main_check_only(tmp_path, capsys):
     Main should not modify files when using --check.
     """
 
-    initial_contents = (
-        "from django.core.paginator import QuerySetPaginator\n"
-    )
+    initial_contents = "from django.core.paginator import QuerySetPaginator\n"
     path = tmp_path / "example.py"
     path.write_text(initial_contents)
 
